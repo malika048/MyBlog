@@ -1,0 +1,44 @@
+header nav{
+    background-color: #476cc9;
+}
+
+.navbar h1{
+    margin-left: auto;
+    margin-right: auto;
+    color: #ffffff;
+    font-family: 'Varela Round', sans-serif;
+}
+
+h1{
+    color: #476cc9;
+}
+
+div.form-group button{
+    position: absolute;
+    left: 940px;
+    bottom: 380px;
+}
+
+div.logout-button input{
+    position: absolute;
+    right: 100px;
+    top: 15px;
+}
+
+div.form-group textarea{
+    width: 400px;
+    height: 100px;
+}
+
+div.note img{
+    width: 800px;
+    height: 500px;
+}
+
+.container form p{
+    width: 25%;
+}
+
+.container form div{
+    width: 25%;
+}

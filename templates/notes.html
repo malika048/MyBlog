@@ -1,0 +1,15 @@
+{% extends "logged_main_page.html" %}
+
+{% block notes %}
+<div class='note'>
+	<center>
+		{% for i in range(length) %}
+			<h5>{{ notes[i] }}</h5>
+			{% if paths[i] != '' %}
+				<img src={{paths[i]}} alt=""><br>
+			{% endif %}
+		{% endfor %}
+		<br>
+	</center>
+</div>
+{% endblock %}
