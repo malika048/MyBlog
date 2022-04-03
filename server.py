@@ -37,7 +37,7 @@ def main_page():
 	if request.method == 'POST':
 		if request.form.get('signin') == 'Sign In':
 			return redirect('/signin')
-		elif request.form.get('signup') == 'Sign Up':
+		elif request.form.get('signup') == 'Sign Up' or request.form.get('signup2') == 'Sign Up':
 			return redirect('/signup')
 		else:
 			pass
