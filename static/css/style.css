@@ -1,10 +1,12 @@
 header nav{
+    height: 60px;
     background-color: #476cc9;
 }
 
 .navbar h1{
-    margin-left: auto;
-    margin-right: auto;
+    position: absolute;
+    top: 6px;
+    left: 130px;
     color: #ffffff;
     font-family: 'Varela Round', sans-serif;
 }
@@ -33,6 +35,58 @@ div.form-group textarea{
 div.note img{
     width: 800px;
     height: 500px;
+}
+
+form.entry-buttons {
+    position: absolute;
+    top: 15px;
+    right: 200px;
+}
+
+div.first-block b{
+    position: absolute;
+    font-size: 100px;
+    top: 100px;
+    left: 125px;
+}
+
+div.first-block div.desc{
+    position: absolute;
+    color: #969696;
+    top: 260px;
+    left: 135px;
+    font-size: 20px;
+}
+
+div.benefits {
+    position: absolute;
+    top: 350px;
+    left: 135px;
+    font-size: 25px;
+}
+
+div.first-block img{
+    position: absolute;
+    top: 150px;
+    right: 100px;
+    height: 300px;
+    width: 400px;
+}
+
+div.first-block form.second-signup{
+    position: absolute;
+    top: 500px;
+    left: 400px;
+}
+
+div.carousel-inner img{
+    height: 400px;
+    width: 900px;
+}
+
+div.second-block div.carousel-slide{
+    position: absolute;
+    top: 600px;
 }
 
 .container form p{
