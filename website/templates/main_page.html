@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}
+Main Page
+{% endblock %} 
+
+{% block content %}
+<div class="first-block">
+	<b>MyBlog</b>
+	<div class="desc">универсальный инструмент развития личности</div>
+	<div class="benefits">
+		✓ Надёжно сохранит опыт и впечатления<br>
+		✓ Проводник на пути к собственной индивидуальности<br>
+		✓ Упростит ведение и организацию дневниковых записей
+	</div>
+	<div class="signup-btn">
+		<a id="signUp" href="/sign-up">
+			<img src="static/img/signup.png"
+			onmouseover="this.src='static/img/signup-hover.png'"
+			onmouseout="this.src='static/img/signup.png'" 
+			alt="Sign Up" width="200" height="70">
+		</a>
+	</div>
+</div>
+{% endblock %}

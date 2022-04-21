@@ -1,0 +1,43 @@
+body {
+	font-family: 'Varela Round', sans-serif;
+}
+
+div.navbar-nav h2 {
+	position: absolute;
+	color: white;
+	left: 700px;
+}
+
+div.first-block b{
+    position: absolute;
+    font-size: 100px;
+    top: 100px;
+    left: 125px;
+}
+
+div.first-block div.desc{
+    position: absolute;
+    color: #969696;
+    top: 260px;
+    left: 135px;
+    font-size: 20px;
+}
+
+div.benefits {
+    position: absolute;
+    top: 350px;
+    left: 135px;
+    font-size: 25px;
+}
+
+div.signup-btn img {
+	position: absolute;
+	top: 500px;
+	left: 350px;
+}
+
+div.login-btn a {
+	position: absolute;
+	top: 10px;
+	right: 100px;
+}
