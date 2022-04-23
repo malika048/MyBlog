@@ -4,6 +4,20 @@
 Main Page
 {% endblock %} 
 
+{% block navbar %}
+<h2>My Blog</h2>
+<div class='login-btn'>
+  <a class="nav-item nav-link" id="login" href="/login">
+    <button type="button" class="btn btn-outline-light">Вход</button>
+  </a>
+</div>
+<div class='nav-signup-btn'>
+  <a class="nav-item nav-link" id="signUp" href="/sign-up">
+    <button type="button" class="btn btn-outline-light">Регистрация</button>
+  </a>
+</div>
+{% endblock %}
+
 {% block content %}
 <div class="first-block">
 	<b>MyBlog</b>
@@ -18,7 +32,7 @@ Main Page
 			<img src="static/img/signup.png"
 			onmouseover="this.src='static/img/signup-hover.png'"
 			onmouseout="this.src='static/img/signup.png'" 
-			alt="Sign Up" width="200" height="70">
+			alt="Sign Up" width="220" height="70">
 		</a>
 	</div>
 </div>

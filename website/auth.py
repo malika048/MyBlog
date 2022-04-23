@@ -29,7 +29,7 @@ def login():
 @login_required
 def logout():
     logout_user()
-    return redirect(url_for('auth.main_page'))
+    return redirect(url_for('views.main_page'))
 
 
 @auth.route('/sign-up', methods=['GET', 'POST'])
