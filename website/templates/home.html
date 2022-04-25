@@ -5,22 +5,67 @@ Home
 {% endblock %}
 
 {% block content %}
-<h1 align="center">Notes</h1>
-<ul class="list-group list-group-flush" id="notes">
-  {% for note in user.notes %}
-  <li class="list-group-item">
-    {{ note.data }}
-    <button type="button" class="close">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </li>
-  {% endfor %}
-</ul>
-<form method="POST">
-  <textarea name="note" id="note" class="form-control"></textarea>
-  <br />
-  <div align="center">
-    <button type="submit" class="btn btn-primary">Add Note</button>
+<div class="first-row">
+  <div class="panel">
+    <img src="static/img/block.png" alt="Block" width="450" height="430">
   </div>
-</form>
+  <h2>My Blog</h2>
+  <div class="user-icon">
+    <img src="static/img/user-icon.png" alt="User icon" width="100" height="100">
+  </div>
+  <div class="user-name">
+    {% for name in user.first_name %}
+      <b>{{ name }}</b>
+    {% endfor %}   
+  </div>
+  <div class="exit-btn">
+    <a id="exit" href="/">
+      <img src="static/img/exit.png"
+      onmouseover="this.src='static/img/exit-hover.png'"
+      onmouseout="this.src='static/img/exit.png'" 
+      alt="Exit" width="60" height="60">
+    </a>
+  </div>
+</div>
+<div class="second-row">
+  <h2>
+    <b>Заметки</b>
+  </h2>
+  <form method="POST">
+    <div class="note-area">
+      <textarea name="note" id="note" class="form-control"></textarea>
+    </div>
+    <button type="submit" class="add-btn">Отправить</button>
+  </form>
+  <div class="user-notes">
+    <ul class="list-group list-group-flush" id="notes">
+      {% for note in user.notes %}
+      <li class="list-group-item">
+        {{ note.data }}
+        <button type="button" class="close" onClick="deleteNote({{ note.id }})">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+<div class="weather-block">
+  <img src="static/img/weather.png" alt="Weather" width="373" height="500">
+  <h2>
+    Погода в городе <br>{{ weather[0] }}:
+  </h2>
+  <div class="condition">
+    {% if weather[1] == 'Clouds' %}
+      <img src="static/img/clouds.png" alt="Weather" width="256" height="256">
+    {% elif weather[1] == 'Snow' %}
+      <img src="static/img/snow.png" alt="Weather" width="256" height="256">
+    {% else %}
+      <img src="static/img/clear.png" alt="Weather" width="256" height="256">
+    {% endif %}
+  </div>
+  <h3>
+    {{ weather[2] }} C
+  </h3>
+</div>
 {% endblock %}
