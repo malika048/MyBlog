@@ -1,6 +1,7 @@
 from flask import Blueprint, render_template, request, flash, jsonify
 from flask_login import login_required, current_user
-from .models import Note
+from werkzeug.security import generate_password_hash, check_password_hash
+from .models import Note, User
 from . import db
 import json
 import requests
@@ -53,5 +54,19 @@ def delete_note():
         if note.user_id == current_user.id:
             db.session.delete(note)
             db.session.commit()
-
     return jsonify({})
+
+
+@views.route('/cabinet')
+def cabinet():
+    return render_template("cabinet.html", user=current_user)
+
+
+@views.route('/settings', methods=['GET', 'POST'])
+def settings():
+    if request.method == 'POST':
+        new_password = request.form.get('new_password')
+        db.session.query(User).filter(User.id == 1).update({User.password: generate_password_hash(new_password)})
+        db.session.commit()
+        return render_template("home.html", user=current_user, weather=get_weather())
+    return render_template("settings.html", user=current_user)

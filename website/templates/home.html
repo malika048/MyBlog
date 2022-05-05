@@ -10,13 +10,15 @@ Home
     <img src="static/img/block.png" alt="Block" width="450" height="430">
   </div>
   <h2>My Blog</h2>
-  <div class="user-icon">
-    <img src="static/img/user-icon.png" alt="User icon" width="100" height="100">
+  <div class="cabinet-btn">
+    <a id="cabinet" href="/cabinet">
+      <input type="submit" value="Личный кабинет" />
+    </a>
   </div>
-  <div class="user-name">
-    {% for name in user.first_name %}
-      <b>{{ name }}</b>
-    {% endfor %}   
+  <div class="settings-btn">
+    <a id="settings" href="/settings">
+      <input type="submit" value="Настройки" />
+    </a>
   </div>
   <div class="exit-btn">
     <a id="exit" href="/">
