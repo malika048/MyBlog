@@ -1,8 +1,10 @@
+# Импорт необходимых для работы модулей
 from . import db
 from flask_login import UserMixin
 from sqlalchemy.sql import func
 
 
+# Создание модели заметок
 class Note(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     data = db.Column(db.String(10000))
@@ -10,9 +12,11 @@ class Note(db.Model):
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
 
 
+# Создание модели пользователей
 class User(db.Model, UserMixin):
     id = db.Column(db.Integer, primary_key=True)
     email = db.Column(db.String(150), unique=True)
     password = db.Column(db.String(150))
     first_name = db.Column(db.String(150))
+    # Связь с моделью Note
     notes = db.relationship('Note')
