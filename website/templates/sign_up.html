@@ -4,26 +4,75 @@
 Sign Up
 {% endblock %}
 
+{% block navbar %}
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="collapse navbar-collapse" id="navbar">
+    <div class="navbar-nav">
+      <h2>My Blog</h2>
+      <div class="home-btn">
+        <a id="home" href="/">
+          <img src="static/img/home.png"
+          onmouseover="this.src='static/img/home-hover.png'"
+          onmouseout="this.src='static/img/home.png'" 
+          alt="Home" width="50" height="50">
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+{% endblock %}
+
 {% block content %}
+<div class="login-form">
+  <img src="static/img/loginform.png" alt="login form"/>
+</div>
 <form method="POST">
-  <h3 align="center">Sign Up</h3>
-  <div class="form-group">
-    <label for="email">Email Address</label>
-    <input type="email" class="form-control" id="email" name="email" placeholder="Enter email"/>
+  <div class="signup-h3">
+    <h3>Регистрация</h3>
   </div>
-  <div class="form-group">
-    <label for="firstName">First Name</label>
-    <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter first name"/>
+  <div class="signup-line">
+    <hr>
   </div>
-  <div class="form-group">
-    <label for="password1">Password</label>
-    <input type="password" class="form-control" id="password1" name="password1" placeholder="Enter password"/>
+  <div class="signup-email-field">
+    <input type="email" class="form-control" id="email" name="email" placeholder="Введите email"/>
   </div>
-  <div class="form-group">
-    <label for="password2">Password (Confirm)</label>
-    <input type="password" class="form-control" id="password2" name="password2" placeholder="Confirm password"/>
+  <div class="name-field">
+    <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Введите имя"/>
   </div>
-  <br/>
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <div class="signup-password-field">
+    <input type="password" class="form-control" id="password1" name="password1" placeholder="Введите пароль"/>
+  </div>
+  <div class="password-confirm-field">
+    <input type="password" class="form-control" id="password2" name="password2" placeholder="Подтвердите пароль"/>
+  </div>
+  <button type="submit" class="form-singup-button">Зарегистрироваться</button>
+  <div class="alreadyhave-btn">
+    <a id="signIn" href="/login">
+      <img src="static/img/alreadyhave.png" alt="Sign In" width="150">
+    </a>
+  </div>
+  <div class="info-h4">
+    <h4>Добро пожаловать в MyBlog</h4>
+  </div>
+  <div class="signin-line2">
+    <hr>
+  </div>
+  <div class="about-first-info">
+    MyBlog — личное пространство для мыслей
+  </div>
+  <div class="about-second-info">
+    Поможет развить осознанность,
+  </div> 
+  <div class="about-third-info">
+    организовать мысли
+  </div>
+  <div class="about-fourth-info">
+    и привести дела в порядок.
+  </div>
+  <div class="know-more-btn">
+    <a href="/">
+     <input type="button" value="Подробнее"/>
+    </a>
+  </div>
 </form>
 {% endblock %}

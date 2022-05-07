@@ -1,0 +1,33 @@
+{% extends "base.html" %} 
+
+{% block title %}
+Settings
+{% endblock %}
+
+{% block navbar %}
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="collapse navbar-collapse" id="navbar">
+    <div class="navbar-nav">
+      <h2>My Blog</h2>
+      <div class="home-btn">
+        <a id="home" href="/home">
+          <img src="static/img/home.png"
+          onmouseover="this.src='static/img/home-hover.png'"
+          onmouseout="this.src='static/img/home.png'" 
+          alt="Home" width="50" height="50">
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+{% endblock %}
+
+{% block content %}
+<form method="POST">
+  <h4>Новый пароль:</h4>
+  <div class="new-password-field">
+    <input type="password" class="form-control" id="new_password" name="new_password" placeholder="Введите пароль"/>
+  </div>
+  <button type="submit" class="form-newpass-button">Изменить</button>
+</form>
+{% endblock %}

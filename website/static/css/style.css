@@ -2,9 +2,15 @@ body {
 	font-family: 'Varela Round', sans-serif;
 }
 
+nav {
+	height: 60px;
+	background-color: #2b7bfc;
+}
+
 div.navbar-nav h2 {
 	position: absolute;
 	color: white;
+	top: 10px;
 	left: 700px;
 }
 
@@ -36,8 +42,327 @@ div.signup-btn img {
 	left: 350px;
 }
 
-div.login-btn a {
+div.login-btn button {
 	position: absolute;
 	top: 10px;
 	right: 100px;
+}
+
+div.nav-signup-btn button {
+	position: absolute;
+	top: 10px;
+	right: 200px;
+}
+
+div.login-form img {
+	margin-left: 150px;
+	margin-top: 80px;
+}
+
+div.signin-h3 h3 {
+	position: absolute;
+	top: 250px;
+	right: 550px;
+}
+
+div.email-field {
+	position: absolute;
+	top: 350px;
+	right: 470px;
+}
+
+div.password-field {
+	position: absolute;
+	top: 410px;
+	right: 470px;
+}
+
+button.form-singin-button {
+	position: absolute;
+	top: 470px;
+	right: 470px;
+	width: 220px;
+	height: 45px;
+	border-radius: 20px;
+	background-color: #2b7bfc;
+	color: white;
+	border-color: white;
+}
+
+button.form-singin-button:hover {
+  opacity: 0.8;
+}
+
+div.signin-line1 hr {
+	background-color: #2b7bfc;
+	height: 4px;
+	width: 35px;
+	position: absolute;
+	top: 38%;
+	right: 37%;
+}
+
+div.info-h4 h4 {
+	position: absolute;
+	top: 270px;
+	left: 400px;
+	color: white;
+}
+
+div.signin-line2 hr {
+	background-color: white;
+	height: 4px;
+	width: 130px;
+	position: absolute;
+	top: 40%;
+	left: 26%;
+}
+
+div.about-first-info {
+	position: absolute;
+	top: 340px;
+	left: 400px;
+	color: white;
+}
+
+div.about-second-info {
+	position: absolute;
+	top: 370px;
+	left: 400px;
+	color: white;
+}
+
+div.about-third-info {
+	position: absolute;
+	top: 400px;
+	left: 400px;
+	color: white;
+}
+
+div.about-fourth-info {
+	position: absolute;
+	top: 430px;
+	left: 400px;
+	color: white;
+}
+
+div.know-more-btn input {
+	position: absolute;
+	top: 470px;
+	left: 400px;
+	width: 150px;
+	height: 40px;
+	border-radius: 20px;
+	background-color: #2b7bfc;
+	color: white;
+	border-color: white;
+}
+
+div.know-more-btn input:hover {
+	background-color: white;
+	color: #2b7bfc;
+	border-color: white;
+}
+
+div.register-btn img {
+	position: absolute;
+	top: 530px;
+	right: 500px;
+}
+
+div.register-btn img:hover {
+	opacity: 0.5;
+}
+
+div.signup-h3 h3 {
+	position: absolute;
+	top: 200px;
+	right: 500px;
+}
+
+div.signup-line hr {
+	background-color: #2b7bfc;
+	height: 4px;
+	width: 35px;
+	position: absolute;
+	top: 31%;
+	right: 37%;
+}
+
+div.signup-email-field {
+	position: absolute;
+	top: 270px;
+	right: 470px;
+}
+
+div.name-field {
+	position: absolute;
+	top: 330px;
+	right: 470px;
+}
+
+div.signup-password-field {
+	position: absolute;
+	top: 390px;
+	right: 470px;
+}
+
+div.password-confirm-field {
+	position: absolute;
+	top: 450px;
+	right: 470px;
+}
+
+button.form-singup-button {
+	position: absolute;
+	top: 508px;
+	right: 470px;
+	width: 220px;
+	height: 45px;
+	border-radius: 20px;
+	background-color: #2b7bfc;
+	color: white;
+	border-color: white;
+}
+
+button.form-singup-button:hover {
+	opacity: 0.8;
+}
+
+div.alreadyhave-btn img {
+	position: absolute;
+	top: 560px;
+	right: 505px;
+}
+
+div.alreadyhave-btn img:hover {
+	opacity: 0.5;
+}
+
+div.panel img {
+	position: absolute;
+	left: 0px;
+}
+
+div.first-row h2 {
+	position: absolute;
+	left: 30px;
+	top: 30px;
+	color: white;
+}
+
+div.user-icon img {
+	position: absolute;
+	left: 20px;
+	top: 100px;
+}
+
+div.user-name {
+	position: absolute;
+	left: 130px;
+	top: 135px;
+}
+
+div.user-name b {
+	color: white;
+	font-size: 20px;
+}
+
+div.exit-btn img {
+	position: absolute;
+	top: 230px;
+	left: 40px;
+}
+
+div.second-row {
+	position: absolute;
+	width: 800px;
+	left: 350px;
+}
+
+div.second-row h2 {
+	position: absolute;
+	top: 30px;
+	left: 10px;
+}
+
+div.note-area textarea {
+	position: absolute;
+	top: 100px;
+}
+
+button.add-btn {
+	position: absolute;
+	top: 200px;
+	right: 20px;
+	width: 150px;
+	border-radius: 20px;
+	background-color: #2b7bfc;
+	color: white;
+	border-color: white;
+}
+
+button.add-btn:hover {
+	opacity: 0.8;
+}
+
+div.user-notes {
+	position: absolute;
+	width: 100%;
+	top: 300px;
+}
+
+div.weather-block img {
+	position: absolute;
+	right: 0px;
+}
+
+div.weather-block h2 {
+	position: absolute;
+	top: 30px;
+	right: 80px;
+	color: white;
+}
+
+div.weather-block h3 {
+	position: absolute;
+	top: 300px;
+	right: 160px;
+	color: white;
+}
+
+div.condition img {
+	position: absolute;
+	top: 100px;
+	right: 70px;
+}
+
+div.cabinet-btn input {
+	position: absolute;
+	left: 40px;
+	top: 100px;
+	font-size: 25px;
+	color: white;
+	background-color: #2b7bfc;
+	border-color: #2b7bfc;
+	border-width: 0px;
+}
+
+div.cabinet-btn input:hover {
+	opacity: 0.5;
+}
+
+div.settings-btn input {
+	position: absolute;
+	left: 40px;
+	top: 160px;
+	font-size: 25px;
+	color: white;
+	background-color: #2b7bfc;
+	border-color: #2b7bfc;
+	border-width: 0px;
+}
+
+div.settings-btn input:hover {
+	opacity: 0.5;
 }
